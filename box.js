@@ -21,12 +21,12 @@ class Box{
             rect(pos.x,pos.y,this.width,this.height);
             pop();    
            
-        } else { 
+        } else {
             World.remove(world,this.body);
             push();
             this.tintfunc = this.tintfunc - 5;
             tint(255,this.tintfunc);
-            rect(tpos.x,pos.y,this.width,this.height);
+            rect(pos.x,pos.y,this.width,this.height);
             pop();
         }
        
